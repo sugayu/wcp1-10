@@ -1,0 +1,15 @@
+ /* リセットCSS */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+/* スマホだけに適用するCSS (iPhone7(375×667)でテスト済み) */
+@media screen and (max-width: 479px) {
+  /* 変更点のみを記述する */
+}
+
+
+
