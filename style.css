@@ -6,6 +6,33 @@
   color: #6c6b6b;
 }
 
+/* clearfixを追加 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  background-color: #EC715F;
+}
+.header-contents {
+  width: 1024px;
+  margin: 0 auto;
+}
+header, .logo{
+  height: 70px;
+}
+.nav-contents {
+  margin-left: auto;
+}
+.nav-list {
+  display: inline-block;
+}
+.nav-list > .nav-list-item{
+  display: inline-block;
+}
+
 /* スマホだけに適用するCSS (iPhone7(375×667)でテスト済み) */
 @media screen and (max-width: 479px) {
   /* 変更点のみを記述する */
