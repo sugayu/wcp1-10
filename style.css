@@ -23,12 +23,14 @@ header {
 header, .logo{
   height: 70px;
 }
-.nav-list {
-  text-align: right;
+nav {
   float: right;
+}
+.nav-list {
   /* line-height:要素を縦方向の中央に配置する（本来は行間を調整するためのプロパティ） */
   line-height: 70px;
 }
+
 .nav-list-item{
   font-size: 16px;
   color: #FAFAFA;
