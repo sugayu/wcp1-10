@@ -28,6 +28,7 @@
 .text {
   padding-top: 30px;
   text-align: center;
+  color: #000000;
 }
 
 header {
@@ -132,7 +133,6 @@ nav {
   width: 980px;
   padding-top: 30px;
   margin: 0 auto 90px;
-
 }
 .strength-content i {
   font-size: 60px;
@@ -154,6 +154,43 @@ nav {
 .strength-text {
   font-size: 16px;
   color: #000000;
+}
+
+.profile {
+  width: 100%;
+  background-color: #ECEFF1;
+}
+.pro-contents {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 30px 0 90px 0;
+
+}
+.pro-left-content {
+  width: 512px;
+  text-align: center;
+  display: inline-block;
+}
+.pro-right-content {
+  width: 512px;
+  float: right;
+}
+.pro-title1 {
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: #000000;
+}
+.pro-text1 {
+  font-size: 16px;
+  color: #000000;
+}
+.pro-title2 {
+  padding: 8px 0 5px 0;
+  font-size: 20px;
+  color: #000000;
+}
+.pro-text2 {
+  
 }
 
 /* スマホだけに適用するCSS (iPhone7(375×667)でテスト済み) */
