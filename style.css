@@ -190,7 +190,40 @@ nav {
   color: #000000;
 }
 .pro-text2 {
-  
+  font-size: 16px;
+  color: #000000;
+}
+
+.contact {
+  width: 100%;
+}
+.contact-contents {
+  width: 800px;
+  margin: 0 auto;
+  padding: 30px 0 90px 0;
+}
+.contact-left-content {
+  width: 400px;
+  display: inline-block;
+}
+.contact-right-content {
+  width: 400px;
+  display: inline-block;
+  float: right;
+}
+.contact-box {
+  display: block;
+  margin: 0 auto;
+}
+.contact-title {
+  font-size: 20px;
+}
+.social {
+  padding-top: 5px;
+}
+.fa {
+  font-size: 50px;
+  padding-right: 20px;
 }
 
 /* スマホだけに適用するCSS (iPhone7(375×667)でテスト済み) */
