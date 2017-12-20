@@ -205,18 +205,27 @@ nav {
 .contact-left-content {
   width: 400px;
   display: inline-block;
+  text-align: center;
 }
 .contact-right-content {
   width: 400px;
   display: inline-block;
   float: right;
+  text-align: center;
 }
 .contact-box {
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
 }
 .contact-title {
+  display: inline-block;
   font-size: 20px;
+  padding-bottom: 5px;
+  color: #000000;
+}
+.mail-adress {
+  padding-bottom: 20px;
+  color: #000000;
 }
 .social {
   padding-top: 5px;
@@ -224,6 +233,10 @@ nav {
 .fa {
   font-size: 50px;
   padding-right: 20px;
+  color: #000000;
+}
+.fa:last-child {
+  padding: 0;
 }
 
 /* スマホだけに適用するCSS (iPhone7(375×667)でテスト済み) */
