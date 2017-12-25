@@ -41,20 +41,20 @@ header {
 header, .logo{
   height: 70px;
 }
-#navToggle {
-  width: 40px;
+#humberger {
+  display: inline-block;
   height: 44px;
-  background-color: green;
+  width: 44px;
+  background-color: #fff;
+  border: 2px solid #444;
   float: right;
 }
-#navToggle span, #navToggle span:before, #navToggle span:after {
-  height: 3px;/*線の太さ*/
-  width: 25px;/*長さ*/
-  border-radius: 3px;
-  background: #000;
-}
-nav {
-  float: right;
+#humberger div {
+  display: inline-block;
+  height: 4px;
+  width: 24px;
+  background-color:#444;
+  margin: 1px 6px;
 }
 .nav-list {
   /* line-height:要素を縦方向の中央に配置する（本来は行間を調整するためのプロパティ） */
@@ -176,7 +176,6 @@ nav {
   width: 1024px;
   margin: 0 auto;
   padding: 30px 0 90px 0;
-
 }
 .pro-left-content {
   width: 512px;
@@ -263,15 +262,146 @@ footer {
   line-height: 60px;
 }
 
-/* スマホだけに適用するCSS (iPhone7(375×667)でテスト済み) */
 @media screen and (max-width: 767px) {
   /* 変更点のみを記述する */
+  
   header {
     width: 100%;
+  }
+  header, .logo{
     height: 50px;
   }
+  .header-contents {
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .main-visual {
+    width: 100%;
+    height: 650px;
+    background-image: url(img/mv.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .main-visual-content {
+    text-align: center;
+    padding-top: 200px;
+  }
+  .main-visual-title {
+    font-size: 64px;
+    color: #FAFAFA;
+  }
+  .main-visual-subtitle {
+    padding-top: 10px;
+    font-size: 20px;
+    color: #FAFAFA;
+  }
+
+  .portfolio {
+    width: 90%;
+    margin: 0 5%;
+  }
   .port-contents {
-    width:;
+    width: 100%;
+  }
+  .port-boxes {
+    padding-top: 30px;
+  }
+  .port-box {
+    float: none;
+  }
+  /* 余白を3n-1番目のみにつける*/
+  .port-box:nth-child(3n-1) {
+    margin: 0 10px 10px 0;
+  }
+  /* 余白を3n-2番目のみにつける*/
+  .port-box:nth-child(3n-2) {
+    margin: 0 10px 10px 0;
+  }
+  .port-box:last-child {
+    /* marginの相殺を期待 */
+    margin-bottom: 90px;
+  }
+  .port-box:nth-child(1) {
+    background-image: url(img/sketch.jpg);
+  }
+  .port-box:nth-child(2) {
+    background-image: url(img/websuku.png);
+  }
+  .port-box:nth-child(3) {
+    background-image: url(img/write.jpg);
+  }
+  .port-box:nth-child(4) {
+    background-image: url(img/webcamp.png);
+  }
+  .port-box:nth-child(5) {
+    background-image: url(img/talk.jpg);
+  }
+  .port-box:nth-child(6) {
+    background-image: url(img/webcamp-mother.png);
+  }
+
+  .feature {
+    width: 100%;
+  }
+  .strength-content {
+    float: none;
+  }
+  .strength-contents {
+    width: 100%;
+  }
+  .strength-title {
+    font-size: 20px;
+    color: #000000;
+    padding: 10px 0;
+  }
+  .strength-text {
+    font-size: 16px;
+    color: #000000;
+  }
+
+  .profile {
+    width: 100%;
+    background-color: #ECEFF1;
+  }
+  .pro-contents {
+    width: 100%;
+  }
+  .pro-right-content {
+    float: none;
+    width: 100%;
+  }
+  .pro-left-content {
+    width: 100%;
+  }
+
+  .contact {
+    width: 100%;
+  }
+  .contact-contents {
+    width: 100%;
+  }
+  .contact-left-content {
+    width: 100%;
+  }
+  .contact-right-content {
+    float: none;
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+    height: 60px;
+    background-color: #EC715F;
+    text-align: center;
+  }
+  .footer-text {
+    font-size: 16px;
+    color: #FAFAFA;
+    line-height: 60px;
   }
 
 }
