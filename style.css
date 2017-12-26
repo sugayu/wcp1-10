@@ -208,7 +208,7 @@ header, .logo{
 .contact {
   width: 100%;
 }
-.contact-contents {
+.contact-boxes {
   width: 800px;
   margin: 0 auto;
   padding: 30px 0 90px 0;
@@ -241,7 +241,7 @@ header, .logo{
 .social {
   padding-top: 5px;
 }
-.social .fa {
+.fa {
   font-size: 50px;
   padding-right: 20px;
   color: #000000;
@@ -264,7 +264,7 @@ footer {
 
 @media screen and (max-width: 767px) {
   /* 変更点のみを記述する */
-  
+
   header {
     width: 100%;
   }
@@ -281,8 +281,8 @@ footer {
 
   .main-visual {
     width: 100%;
-    height: 650px;
-    background-image: url(img/mv.png);
+    height: 750px;
+    background-image: url(img/code.png);
     background-size: cover;
     background-position: center;
   }
@@ -291,67 +291,72 @@ footer {
     padding-top: 200px;
   }
   .main-visual-title {
-    font-size: 64px;
+    font-size: 40px;
     color: #FAFAFA;
   }
   .main-visual-subtitle {
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: #FAFAFA;
   }
 
   .portfolio {
+    width: 100%;
+  }
+  .port-contents {
     width: 90%;
     margin: 0 5%;
   }
-  .port-contents {
-    width: 100%;
-  }
   .port-boxes {
-    padding-top: 30px;
+    padding: 30px 0 90px 0;
   }
   .port-box {
     float: none;
   }
-  /* 余白を3n-1番目のみにつける*/
-  .port-box:nth-child(3n-1) {
-    margin: 0 10px 10px 0;
-  }
-  /* 余白を3n-2番目のみにつける*/
-  .port-box:nth-child(3n-2) {
-    margin: 0 10px 10px 0;
-  }
-  .port-box:last-child {
-    /* marginの相殺を期待 */
-    margin-bottom: 90px;
-  }
   .port-box:nth-child(1) {
-    background-image: url(img/sketch.jpg);
+    background-image: url(img/websuku.png);
+    margin: 0 auto;
   }
   .port-box:nth-child(2) {
-    background-image: url(img/websuku.png);
+    background-image: url(img/webcamp.png);
+    margin: 10px auto 0;
   }
   .port-box:nth-child(3) {
-    background-image: url(img/write.jpg);
+    background-image: url(img/webcamp-mother.png);
+    margin: 10px auto 0;
   }
   .port-box:nth-child(4) {
-    background-image: url(img/webcamp.png);
+    display: none;
   }
   .port-box:nth-child(5) {
-    background-image: url(img/talk.jpg);
+    display: none;
   }
   .port-box:nth-child(6) {
-    background-image: url(img/webcamp-mother.png);
+    display: none;
   }
 
   .feature {
     width: 100%;
   }
-  .strength-content {
-    float: none;
+  .feature-contents {
+    width: 90%;
+    margin: 0 5% 90px;
   }
   .strength-contents {
-    width: 100%;
+    width: 90%;
+  }
+  .strength-content {
+    float: none;
+    margin: 0 auto;
+  }
+  .strength-content:nth-child(2) {
+    padding-top: 10px;
+  }
+  .strength-content:nth-child(3) {
+    padding-top: 10px;
+  }
+  .strength-content:last-child {
+    margin: 0 auto;
   }
   .strength-title {
     font-size: 20px;
@@ -367,8 +372,12 @@ footer {
     width: 100%;
     background-color: #ECEFF1;
   }
+  .profile-contents {
+    width: 90%;
+    margin: 0 5% 90px;
+  }
   .pro-contents {
-    width: 100%;
+    width: 90%;
   }
   .pro-right-content {
     float: none;
@@ -377,11 +386,22 @@ footer {
   .pro-left-content {
     width: 100%;
   }
+  .pro-title1, .pro-title2 {
+    text-align: center;
+    padding: 20px 0 5px 0;
+  }
+  .pro-text1, .pro-text2 {
+    text-align: center;
+  }
 
   .contact {
     width: 100%;
   }
   .contact-contents {
+    width: 90%;
+    margin: 0 5% 90px;
+  }
+  .contact-boxes {
     width: 100%;
   }
   .contact-left-content {
@@ -390,20 +410,14 @@ footer {
   .contact-right-content {
     float: none;
     width: 100%;
+    padding-top: 20px
   }
-
-  footer {
-    width: 100%;
-    height: 60px;
-    background-color: #EC715F;
+  .contact-box {
     text-align: center;
   }
-  .footer-text {
-    font-size: 16px;
-    color: #FAFAFA;
-    line-height: 60px;
+  .fa {
+    padding-right: 8px;
   }
-
 }
 
 
